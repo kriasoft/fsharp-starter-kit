@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Web Application Server</Name>
+    <Description>F#, Owin, ASP.NET Identity, SignalR... It can be used as a back-end server for a single-page application (SPA), exposing only OAuth and Web Sockets endpoints.</Description>
+    <Icon Package="{91A04A73-4F2C-4E7C-AD38-C1A68E7DA05C}" ID="4002" />
+    <TemplateID>FSharp.Server</TemplateID>
+    <ProjectType>FSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>30</SortOrder>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Server</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Project.fsproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Startup.fs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="FSharp.Server.e8fd44bf-3ffa-4285-8a96-c3e5fb0f1d4f">
+      <package id="FsWebAddRegistryEntries" version="0.1.0.0" />
+      <package id="Microsoft.AspNet.Identity.Core" version="2.0.1" />
+      <package id="Microsoft.AspNet.Identity.Owin" version="2.0.1" />
+      <package id="Microsoft.AspNet.SignalR.Core" version="2.0.3" />
+      <package id="Microsoft.Owin" version="3.0.0-beta1" />
+      <package id="Microsoft.Owin.Host.SystemWeb" version="3.0.0-beta1" />
+      <package id="Microsoft.Owin.Security" version="2.0.1" />
+      <package id="Microsoft.Owin.Security.Cookies" version="2.1.0" />
+      <package id="Microsoft.Owin.Security.OAuth" version="2.1.0" />
+      <package id="Newtonsoft.Json" version="5.0.1" />
+      <package id="Owin" version="1.0" />
+    </packages>
+  </WizardData>
+</VSTemplate>

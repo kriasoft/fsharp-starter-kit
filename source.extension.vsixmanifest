@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="FSharp.Server.e8fd44bf-3ffa-4285-8a96-c3e5fb0f1d4f" Version="0.1.0" Language="en-US" Publisher="Konstantin Tarkus" />
+    <DisplayName>Web Application Server</DisplayName>
+    <Description xml:space="preserve">F#, Owin, ASP.NET Identity, SignalR... It can be used as a back-end server for a single-page application (SPA), exposing only OAuth and Web Sockets endpoints, and it is supposed to be paired with a web application front-end (.html, .css, .js, images) hosted in CDN and developed in a seporate project. This project can be mixed with other server-side technologies like Nancy, F# SQL Command Provider etc.</Description>
+    <MoreInfo>https://github.com/kriasoft/FSharp-Server-Template</MoreInfo>
+    <License>LICENSE.txt</License>
+    <Icon>icon.ico</Icon>
+    <Tags>F#,FSharp,Owin,ASP.NET Identity,OAuth,SignalR,Web Sockets,Single Page Application, SPA</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.VWDExpress" Version="[11.0,]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="NuGet.67e54e40-0ae3-42c5-a949-fddf5739e6a5" DisplayName="NuGet Package Manager for Visual Studio 2013" d:Source="Installed" Version="[2.8.50313.46,3.0)" d:InstallSource="Download" Location="http://docs.nuget.org/docs/start-here/installing-nuget" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\FSharp\Web\FSharp-Server.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\FSharp\Web\FSharp-Server.zip" />
+  </Assets>
+</PackageManifest>
