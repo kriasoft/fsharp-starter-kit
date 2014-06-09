@@ -4,7 +4,7 @@
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <ExtensionTasksPath Condition="'$(ExtensionTasksPath)' == ''">C:\Projects\GitHub\fsharp-server-template\packages\MSBuild.Extension.Pack.1.4.0\tools\net40\</ExtensionTasksPath>
+    <ExtensionTasksPath Condition="'$(ExtensionTasksPath)' == ''">$(SolutionDir)packages\MSBuild.Extension.Pack.1.4.0\tools\net40\</ExtensionTasksPath>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>12.0</OldToolsVersion>
