@@ -85,6 +85,52 @@ app into a distributable format and upload that to Windows Azure App Service, si
 $ npm run deploy                # Same as running: node tools/deploy --production
 ```
 
+
+### References
+
+<table width="100%">
+  <tr>
+    <td width="185">
+      <a href="http://amzn.to/1UufBR9">
+        <img src="http://ecx.images-amazon.com/images/I/41y1%2BeGsX3L._SX150.jpg" width="150" height="214" alt="Beginning F# 4.0" />
+      </a>
+    </td>
+    <td>
+      <p>
+        <strong><a href="http://amzn.to/1UufBR9">Beginning F# 4.0</a>, 2nd Edition</strong><br />
+        <sup>by Robert Pickering, Kit Eason (Jun 2016)</sup>
+      </p>
+      <p>
+        This book is a great foundation for exploring functional-first programming and its role in
+        the future of application development. The best-selling introduction to F#, now thoroughly
+        updated to version 4.0, will help you learn the language and explore its new features
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="185">
+      <a href="http://amzn.to/1U4dKp1">
+        <img src="http://ecx.images-amazon.com/images/I/31YI7c5ZCbL._SX150.jpg" width="150" height="214" alt="Expert F# 4.0" />
+      </a>
+    </td>
+    <td>
+      <p>
+        <strong><a href="http://amzn.to/1U4dKp1">Expert F# 4.0</a>, 4th Edition</strong><br />
+        <sup>by Don Syme, Adam Granicz, Antonio Cisternino (Dec 2016)</sup>
+      </p>
+      <p>
+        Learn from F#'s inventor to become an expert in the latest version of this powerful
+        programming language so you can seamlessly integrate functional, imperative,
+        object-oriented, and query programming style flexibly and elegantly to solve any
+        programming problem. Expert F# 4.0 will help you achieve unrivaled levels of programmer
+        productivity and program clarity across multiple platforms including Windows, Linux,
+        Android, OSX, and iOS as well as HTML5 and GPUs.
+      </p>
+    </td>
+  </tr>
+</table>
+
+
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js, Express, GraphQL, React)
