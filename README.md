@@ -1,4 +1,4 @@
-# F# Starter Kit &nbsp; ![Status](https://img.shields.io/badge/status-early%20preview-orange.svg?style=flat-square) [![Tips](https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DSV6K6LZU2VGW)
+# F# Starter Kit &nbsp; ![Status](https://img.shields.io/badge/status-early%20preview-orange.svg?style=flat-square) [![Online Chat](http://img.shields.io/badge/chat-%23fsharp--starter--kit-blue.svg?style=flat-square)](https://gitter.im/kriasoft/fsharp-starter-kit) [![Tips](https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S7EE6P6KDLP9S)
 
 > [F# Starter Kit](https://github.com/kriasoft/fsharp-starter-kit) is an opinionated
 > boilerplate for web development based on [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript),
@@ -88,7 +88,7 @@ $ npm run deploy                # Same as running: node tools/deploy --productio
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js, Express, GraphQL, React)
-* [ASP.NET Core Starter Kit](https://github.com/kriasoft/react-starter-kit) — Web app boilerplate (.NET Core, C#, JavaScript, Babel, Webpack, React)
+* [ASP.NET Core Starter Kit](https://github.com/kriasoft/aspnet-starter-kit) — Web app boilerplate (.NET Core, C#, JavaScript, Babel, Webpack, React)
 * [Babel Starter Kit](https://github.com/kriasoft/babel-starter-kit) — JavaScript library boilerplate (ES2015+, Babel, Rollup)
 * [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate) — Generate static websites from React components with Webpack
 * [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
