@@ -10,6 +10,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const extend = require('extend');
+const AssetsPlugin = require('assets-webpack-plugin');
 
 const isDebug = !(process.argv.includes('--production') || process.argv.includes('-p'));
 const isVerbose = process.argv.includes('--verbose') || process.argv.includes('-v');
@@ -32,7 +33,8 @@ const config = {
   output: {
     path: path.resolve(__dirname, '../public/assets/'),
     publicPath: '/assets/',
-    file: '[name].js',
+    filename: isDebug ? '[name].js?[chunkhash]' : '[name].[chunkhash].js',
+    chunkFilename: isDebug ? '[name].[id].js?[chunkhash]' : '[name].[id].[chunkhash].js',
     sourcePrefix: '  ',
   },
 
@@ -62,6 +64,13 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': isDebug ? '"development"' : '"production"',
       __DEV__: isDebug,
+    }),
+    // Emit a JSON file with assets paths
+    // https://github.com/sporto/assets-webpack-plugin#options
+    new AssetsPlugin({
+      path: path.resolve(__dirname, '../public/assets'),
+      filename: 'assets.json',
+      prettyPrint: true,
     }),
   ],
 

@@ -4,16 +4,34 @@
 
 open System
 open System.IO
+open System.Runtime.Serialization
+open System.Runtime.Serialization.Json
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
 open Microsoft.AspNetCore.Http
 open Microsoft.Extensions.Logging
 
+[<DataContract>]
+type AssetsJS = {
+  [<field: DataMember(Name = "js")>]
+  js: string
+}
+
+[<DataContract>]
+type Assets = {
+  [<field: DataMember(Name = "main")>]
+  main: AssetsJS
+}
+
 type Startup() =
-  member x.Configure(app: IApplicationBuilder, factory: ILoggerFactory) =
+  member this.Configure(app: IApplicationBuilder, env: IHostingEnvironment, factory: ILoggerFactory) =
     factory.AddConsole(Microsoft.Extensions.Logging.LogLevel.Trace) |> ignore
     app.UseStaticFiles() |> ignore
-    app.Run(fun ctx -> ctx.Response.WriteAsync("""<!doctype html>
+    let assets =
+      use stream = File.OpenRead(Path.Combine(env.WebRootPath, "./assets/assets.json"))
+      let obj = (new DataContractJsonSerializer(typeof<Assets>)).ReadObject(stream)
+      obj :?> Assets
+    app.Run(fun ctx -> ctx.Response.WriteAsync(sprintf """<!doctype html>
 <html lang="">
   <head>
     <meta charset="utf-8">
@@ -29,14 +47,14 @@ type Startup() =
   <body>
     <div id="container"></div>
     <script src="https://cdn.rawgit.com/tleunen/react-mdl/master/extra/material.min.js"></script>
-    <script src="/assets/main.js"></script>
+    <script src="%s"></script>
     <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
-</html>""")) |> ignore
+</html>""" assets.main.js)) |> ignore
 
 [<EntryPoint>]
 let main argv =

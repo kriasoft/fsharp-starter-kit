@@ -14,7 +14,7 @@ const task = require('./lib/task');
 
 module.exports = task('clean', Promise.resolve()
   .then(() => del(
-    ['build/*', '!build/.git', 'public/assets/*'],
+    ['build/*', 'public/assets/*', '!build/.git'],
     { dot: true, cwd: path.resolve(__dirname, '../') }
   ))
   .then(() => {
