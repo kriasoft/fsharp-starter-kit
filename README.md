@@ -1,32 +1,113 @@
-﻿# Web Application Server
+# F# Starter Kit &nbsp; ![Status](https://img.shields.io/badge/status-early%20preview-orange.svg?style=flat-square) [![Tips](https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DSV6K6LZU2VGW)
 
-> F#, Owin, ASP.NET Identity, SignalR... It can be used as a back-end server
-> for a single-page application (SPA), exposing only OAuth and Web Sockets
-> endpoints, and it is supposed to be paired with a web application front-end
-> (.html, .css, .js, images) hosted in CDN and developed in a separate project.
-> This project can be mixed with other server-side technologies like Nancy,
-> F# SQL Command Provider etc.
+> [F# Starter Kit](https://github.com/kriasoft/fsharp-starter-kit) is an opinionated
+> boilerplate for web development based on [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript),
+> [Babel](http://babeljs.io/), [Webpack](https://webpack.github.io/) on the frontend
+> and [.NET Core](http://dotnet.github.io/) and [F#](http://fsharp.org/) on the backend
 
-**Source**: https://github.com/kriasoft/FSharp-Server-Template
 
-## Download
+### Features
 
-http://visualstudiogallery.msdn.microsoft.com/c7ea6e81-b383-40e4-899c-4a5ab9d68f02
+&nbsp; &nbsp; ✓ Component-based front-end development with [Webpack](https://webpack.github.io/), [CSS Modules](https://github.com/css-modules/css-modules) and [React](https://facebook.github.io/react) (see [`tools/webpack.config.js`](./tools/webpack.config.js))<br>
+&nbsp; &nbsp; ✓ Modern JavaScript syntax ([ES2015](http://babeljs.io/docs/learn-es2015/)+) via [Babel](http://babeljs.io/); modern CSS syntax (CSS3+) via [PostCSS](https://github.com/postcss/postcss)<br>
+&nbsp; &nbsp; ✓ Application state management via [Redux](http://redux.js.org/) (coming soon)<br>
+&nbsp; &nbsp; ✓ Routing and navigation via [React App](https://github.com/kriasoft/react-app), [Universal Router](https://github.com/kriasoft/universal-router) and [History](https://github.com/mjackson/history) `npm` modules<br>
+&nbsp; &nbsp; ✓ [Code-splitting](https://github.com/webpack/docs/wiki/code-splitting) and async chunk loading with [Webpack](https://webpack.github.io/) and [ES6 System.import()](http://www.2ality.com/2014/09/es6-modules-final.html)<br>
+&nbsp; &nbsp; ✓ Hot Module Replacement ([HMR](https://webpack.github.io/docs/hot-module-replacement.html)) /w [React Hot Loader](http://gaearon.github.io/react-hot-loader/) (coming soon)<br>
+&nbsp; &nbsp; ✓ Cross-device testing with [Browsersync](https://browsersync.io/) (coming soon)<br>
+&nbsp; &nbsp; ✓ Git-based deployment to [Azure App Service](https://azure.microsoft.com/services/app-service/) (see [`tools/deploy.js`](./tools/deploy.js))<br>
+&nbsp; &nbsp; ✓ 24/7 community support on [Gitter](https://gitter.im/kriasoft/fsharp-starter-kit) or [StackOverflow](http://stackoverflow.com/questions/tagged/fsharp-starter-kit); customization requests on [Codementor](https://www.codementor.io/koistya)<br>
 
-## References
 
- * [The F# Software Foundation](http://fsharp.org/) | [Try F#](http://www.tryfsharp.org/)
- * [Owin and Katana](http://www.asp.net/aspnet/overview/owin-and-katana)
- * [Getting Started with ASP.NET Identity](http://www.asp.net/identity)
- * [Real-time Web with ASP.NET SignalR](http://www.asp.net/signalr)
- * [F# Type Providers for T-SQL](http://fsprojects.github.io/FSharp.Data.SqlClient/)
- * [ASP.NET Identity Database Schema](https://github.com/kriasoft/AspNet.Identity)
+### Directory Layout
 
-### Authors
+```shell
+.
+├── /.vscode/                   # Visual Studio Code settings
+├── /build/                     # The folder for compiled output
+├── /client/                    # Client-side app (frontend)
+├── /client.test/               # Unit and integration tests for the frontend app
+├── /public/                    # Static files such as favicon.ico etc.
+├── /server/                    # Web server and data API (backend)
+├── /server.test/               # Unit and integration tests for the backend app
+├── /tools/                     # Build automation scripts and utilities
+│── jsconfig.json               # Visual Studio Code settings for JavaScript
+│── LICENSE.txt                 # Licensing information
+│── package.json                # The list of project dependencies and NPM scripts
+└── README.md                   # Project overview / getting started guide
+```
 
- * [Konstantin Tarkus](https://angel.co/koistya) ([@koistya](https://twitter.com/koistya)), KriaSoft LLC
 
-### Copyright
+### Prerequisites
 
- * Source code is licensed under the MIT License. See [LICENSE.txt](./LICENSE.txt) file in the project root.
- * Documentation to the project is licensed under the [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) license.
+* OS X, Windows or Linux
+* [Node.js](https://nodejs.org) v6 or newer
+* [.NET Core v1.0 RC2](https://blogs.msdn.microsoft.com/dotnet/2016/05/16/announcing-net-core-rc2/)
+* [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) with [F# extension](http://ionide.io/)
+
+
+### Getting Started
+
+`1`. Clone the latest version of **F# Starter Kit** on your local machine by running:
+
+```shell
+$ git clone -o fsharp-starter-kit -b master --single-branch \
+      https://github.com/kriasoft/fsharp-starter-kit.git MyApp
+$ cd MyApp
+```
+
+`2`. Install project dependencies listed in [`project.json`](./server/project.json) and
+[`package.json`](./package.json) files by running: 
+
+```shell
+$ dotnet restore                # Installs .NET dependencies listed in project.json
+$ npm install                   # Installs Node.js dependencies listed in package.json
+```
+
+`3`. Finally, launch the web app by running:
+
+```shell
+$ npm start                     # Compiles and lanches the app
+```
+
+The app should become available at [http://localhost:5000/](http://localhost:5000/)
+
+
+### How to Deploy
+
+Before you can deploy your app to [Azure App Service](https://azure.microsoft.com/services/app-service/),
+you need to open Web App settings in [Azure Portal](https://portal.azure.com/), go to "Deployment
+Source", select "Local Git Repository" and hit [OK]. Then copy and paste "Git clone URL" of your
+Web App into [`tools/deploy.js`](./tools/deploy.js) file. Then, whenever you need to compile your
+app into a distributable format and upload that to Windows Azure App Service, simply run:
+
+```shell
+$ npm run deploy                # Same as running: node tools/deploy --production
+```
+
+### Related Projects
+
+* [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js, Express, GraphQL, React)
+* [ASP.NET Core Starter Kit](https://github.com/kriasoft/react-starter-kit) — Web app boilerplate (.NET Core, C#, JavaScript, Babel, Webpack, React)
+* [Babel Starter Kit](https://github.com/kriasoft/babel-starter-kit) — JavaScript library boilerplate (ES2015+, Babel, Rollup)
+* [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate) — Generate static websites from React components with Webpack
+* [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
+* [Membership Database](https://github.com/membership/membership.db) — SQL database boilerplate for web app users, roles and auth tokens
+
+
+### Get in Touch
+
+* [#fsharp-starter-kit](https://gitter.im/kriasoft/fsharp-starter-kit) on Gitter
+* [@koistya](https://twitter.com/koistya) on [Codementor](https://www.codementor.io/koistya)
+
+
+### License
+
+Copyright © 2014-2016 [Kriasoft](https://kriasoft.com). This source code is licensed under the MIT
+license found in the [LICENSE.txt](https://github.com/kriasoft/fsharp-starter-kit/blob/master/LICENSE.txt)
+file. The documentation to the project is licensed under the [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+license.
+
+
+---
+Made with ♥ by Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) and [contributors](https://github.com/kriasoft/fsharp-starter-kit/graphs/contributors)
