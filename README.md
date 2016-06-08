@@ -1,9 +1,11 @@
-# F# Starter Kit &nbsp; ![Status](https://img.shields.io/badge/status-early%20preview-orange.svg?style=flat-square) [![Online Chat](http://img.shields.io/badge/chat-%23fsharp--starter--kit-blue.svg?style=flat-square)](https://gitter.im/kriasoft/fsharp-starter-kit) [![Tips](https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S7EE6P6KDLP9S)
+# ASP.NET Core Starter Kit `|>` F# &nbsp; ![Status](https://img.shields.io/badge/status-early%20preview-orange.svg?style=flat-square) [![Tips](https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S7EE6P6KDLP9S)
 
-> [F# Starter Kit](https://github.com/kriasoft/fsharp-starter-kit) is an opinionated
-> boilerplate for web development based on [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript),
-> [Babel](http://babeljs.io/), [Webpack](https://webpack.github.io/) on the frontend
-> and [.NET Core](http://dotnet.github.io/) and [F#](http://fsharp.org/) on the backend
+> [ASP.NET Core Starter Kit](https://github.com/kriasoft/aspnet-starter-kit) is an opinionated
+> boilerplate for web development based on [.NET Core](http://dotnet.github.io/),
+> [GraphQL](http://graphql.org/) on the backend and [Babel](http://babeljs.io/),
+> [Webpack](https://webpack.github.io/), [React](https://facebook.github.io/react) on the frontend.
+> It comes in both [C#](https://github.com/kriasoft/aspnet-starter-kit) and
+> [F#](https://github.com/kriasoft/fsharp-starter-kit) flavors.
 
 
 ### Features
@@ -16,7 +18,7 @@
 &nbsp; &nbsp; ✓ Hot Module Replacement ([HMR](https://webpack.github.io/docs/hot-module-replacement.html)) /w [React Hot Loader](http://gaearon.github.io/react-hot-loader/) (coming soon)<br>
 &nbsp; &nbsp; ✓ Cross-device testing with [Browsersync](https://browsersync.io/) (coming soon)<br>
 &nbsp; &nbsp; ✓ Git-based deployment to [Azure App Service](https://azure.microsoft.com/services/app-service/) (see [`tools/deploy.js`](./tools/deploy.js))<br>
-&nbsp; &nbsp; ✓ 24/7 community support on [Gitter](https://gitter.im/kriasoft/fsharp-starter-kit) or [StackOverflow](http://stackoverflow.com/questions/tagged/fsharp-starter-kit); customization requests on [Codementor](https://www.codementor.io/koistya)<br>
+&nbsp; &nbsp; ✓ 24/7 community support on [Gitter](https://gitter.im/kriasoft/aspnet-starter-kit) or [StackOverflow](http://stackoverflow.com/questions/tagged/aspnet-starter-kit); customization requests on [Codementor](https://www.codementor.io/koistya)<br>
 
 
 ### Directory Layout
@@ -48,7 +50,7 @@
 
 ### Getting Started
 
-`1`. Clone the latest version of **F# Starter Kit** on your local machine by running:
+`1`. Clone the latest version of **ASP.NET Core Starter Kit** on your local machine by running:
 
 ```shell
 $ git clone -o fsharp-starter-kit -b master --single-branch \
@@ -57,14 +59,14 @@ $ cd MyApp
 ```
 
 `2`. Install project dependencies listed in [`project.json`](./server/project.json) and
-[`package.json`](./package.json) files by running: 
+[`package.json`](./package.json) files: 
 
 ```shell
 $ dotnet restore                # Installs .NET dependencies listed in project.json
 $ npm install                   # Installs Node.js dependencies listed in package.json
 ```
 
-`3`. Finally, launch the web app by running:
+`3`. Finally, launch the web app:
 
 ```shell
 $ npm start                     # Compiles and lanches the app

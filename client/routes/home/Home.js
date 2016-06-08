@@ -1,5 +1,5 @@
 /**
- * F# Starter Kit (https://github.com/kriasoft/fsharp-starter-kit)
+ * ASP.NET Core Starter Kit
  *
  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
  *
@@ -15,7 +15,7 @@ const link = "https://github.com/kriasoft/fsharp-starter-kit";
 function Home() {
   return (
     <Layout>
-      <h1>Welcome to F# Starter Kit!</h1>
+      <h1>Welcome to ASP.NET Core Starter Kit!</h1>
       <p>
         For more information visit <a href={link}>{link}</a>
       </p>

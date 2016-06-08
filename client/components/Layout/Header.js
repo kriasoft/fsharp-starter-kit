@@ -1,5 +1,5 @@
 /**
- * F# Starter Kit (https://github.com/kriasoft/fsharp-starter-kit)
+ * ASP.NET Core Starter Kit
  *
  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
  *
@@ -24,7 +24,7 @@ class Header extends React.Component {
     return (
       <header className="mdl-layout__header" ref="root">
         <div className="mdl-layout__header-row">
-          <span className="mdl-layout-title">F# Starter Kit</span>
+          <span className="mdl-layout-title">ASP.NET Core Starter Kit</span>
           <div className="mdl-layout-spacer"></div>
           <Navigation />
         </div>

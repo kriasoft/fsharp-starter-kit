@@ -1,5 +1,5 @@
 /**
- * F# Starter Kit (https://github.com/kriasoft/fsharp-starter-kit)
+ * ASP.NET Core Starter Kit
  *
  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
  *
