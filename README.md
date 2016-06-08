@@ -2,9 +2,10 @@
 
 > [ASP.NET Core Starter Kit](https://github.com/kriasoft/aspnet-starter-kit) is an opinionated
 > boilerplate for web development based on [.NET Core](http://dotnet.github.io/),
-> [GraphQL](http://graphql.org/) on the backend and [Babel](http://babeljs.io/),
-> [Webpack](https://webpack.github.io/), [React](https://facebook.github.io/react) on the frontend.
-> It comes in both [C#](https://github.com/kriasoft/aspnet-starter-kit) and
+> [Kestrel](https://github.com/aspnet/KestrelHttpServer), [GraphQL](http://graphql.org/) on the
+> backend and [Babel](http://babeljs.io/), [Webpack](https://webpack.github.io/),
+> [React](https://facebook.github.io/react) on the frontend. This boilerplate comes in both
+> [C#](https://github.com/kriasoft/aspnet-starter-kit) and
 > [F#](https://github.com/kriasoft/fsharp-starter-kit) flavors.
 
 
@@ -136,9 +137,8 @@ $ npm run deploy                # Same as running: node tools/deploy --productio
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js, Express, GraphQL, React)
-* [ASP.NET Core Starter Kit](https://github.com/kriasoft/aspnet-starter-kit) — Web app boilerplate (.NET Core, C#, JavaScript, Babel, Webpack, React)
 * [Babel Starter Kit](https://github.com/kriasoft/babel-starter-kit) — JavaScript library boilerplate (ES2015+, Babel, Rollup)
-* [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate) — Generate static websites from React components with Webpack
+* [ASP.NET Core Starter Kit](https://github.com/kriasoft/aspnet-starter-kit) — Web app boilerplate (C#, .NET Core, Kestrel, GraphQL, React)
 * [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
 * [Membership Database](https://github.com/membership/membership.db) — SQL database boilerplate for web app users, roles and auth tokens
 
