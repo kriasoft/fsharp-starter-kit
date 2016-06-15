@@ -67,14 +67,13 @@ $ cd MyApp
 [`package.json`](./package.json) files: 
 
 ```shell
-$ dotnet restore                # Installs .NET dependencies listed in project.json
-$ npm install                   # Installs Node.js dependencies listed in package.json
+$ npm install                   # Install both Node.js and .NET Core dependencies
 ```
 
 `3`. Finally, launch the web app:
 
 ```shell
-$ npm start                     # Compiles and lanches the app
+$ npm start                     # Compile and lanch the app
 ```
 
 The app should become available at [http://localhost:5000/](http://localhost:5000/)
@@ -92,50 +91,73 @@ app into a distributable format and upload that to Windows Azure App Service, si
 $ npm run deploy                # Same as running: node tools/deploy --production
 ```
 
+### How to Update
 
-### References
+We work hard on keeping the project up to date and adding new features. After starting a new web
+application project based on this boilerplate, you can alwasy fetch and merge the latest changes
+from this (upstream) repo back into your project by running:
 
-<table width="100%">
-  <tr>
-    <td width="185">
-      <a href="http://amzn.to/1UufBR9">
-        <img src="http://ecx.images-amazon.com/images/I/41y1%2BeGsX3L._SX150.jpg" width="150" height="214" alt="Beginning F# 4.0" />
-      </a>
-    </td>
-    <td>
-      <p>
-        <strong><a href="http://amzn.to/1UufBR9">Beginning F# 4.0</a>, 2nd Edition</strong><br />
-        <sup>by Robert Pickering, Kit Eason (Jun 2016)</sup>
-      </p>
-      <p>
-        This book is a great foundation for exploring functional-first programming and its role in
-        the future of application development. The best-selling introduction to F#, now thoroughly
-        updated to version 4.0, will help you learn the language and explore its new features
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="185">
-      <a href="http://amzn.to/1U4dKp1">
-        <img src="http://ecx.images-amazon.com/images/I/31YI7c5ZCbL._SX150.jpg" width="150" height="214" alt="Expert F# 4.0" />
-      </a>
-    </td>
-    <td>
-      <p>
-        <strong><a href="http://amzn.to/1U4dKp1">Expert F# 4.0</a>, 4th Edition</strong><br />
-        <sup>by Don Syme, Adam Granicz, Antonio Cisternino (Dec 2016)</sup>
-      </p>
-      <p>
-        Learn from F#'s inventor to become an expert in the latest version of this powerful
-        programming language so you can seamlessly integrate functional, imperative,
-        object-oriented, and query programming style flexibly and elegantly to solve any
-        programming problem. Expert F# 4.0 will help you achieve unrivaled levels of programmer
-        productivity and program clarity across multiple platforms including Windows, Linux,
-        Android, OSX, and iOS as well as HTML5 and GPUs.
-      </p>
-    </td>
-  </tr>
-</table>
+```shell
+$ git checkout master
+$ git fetch aspnet-starter-kit
+$ git merge aspnet-starter-kit/master 
+```
+
+Alternatively, you can pull the updates into a separate folder and and compare that folder with your
+project by using a diff tool such as [Beyond Compare](http://www.scootersoftware.com/).
+
+
+### Learn More
+
+
+* **General**
+  * [.NET Core Documentation](https://dotnet.github.io/docs/) (core concepts: CoreFX, CoreCLR, Roslyn, .NET CLI tools etc.)
+  * [ASP.NET Core Documentation](https://docs.asp.net/en/latest/) (MVC, Razor, Routing, SignalR, Identity, Localization, Caching etc.)
+  * [Entity Framework Core Documenation](https://docs.efproject.net/en/latest/) (providers, models, migrations, EF CLI tools etc.)
+* **Security**
+  * [How to Set Up ASP.NET Core DataProtection in a Web Farm](http://www.paraesthesia.com/archive/2016/06/15/set-up-asp-net-dataprotection-in-a-farm/) by [Travis Illig](http://www.paraesthesia.com/)
+* **Books**
+  <table width="100%">
+    <tr>
+      <td width="185">
+        <a href="http://amzn.to/1UufBR9">
+          <img src="http://ecx.images-amazon.com/images/I/41y1%2BeGsX3L._SX150.jpg" width="150" height="214" alt="Beginning F# 4.0" />
+        </a>
+      </td>
+      <td>
+        <p>
+          <strong><a href="http://amzn.to/1UufBR9">Beginning F# 4.0</a>, 2nd Edition</strong><br />
+          <sup>by Robert Pickering, Kit Eason (Jun 2016)</sup>
+        </p>
+        <p>
+          This book is a great foundation for exploring functional-first programming and its role in
+          the future of application development. The best-selling introduction to F#, now thoroughly
+          updated to version 4.0, will help you learn the language and explore its new features
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="185">
+        <a href="http://amzn.to/1U4dKp1">
+          <img src="http://ecx.images-amazon.com/images/I/31YI7c5ZCbL._SX150.jpg" width="150" height="214" alt="Expert F# 4.0" />
+        </a>
+      </td>
+      <td>
+        <p>
+          <strong><a href="http://amzn.to/1U4dKp1">Expert F# 4.0</a>, 4th Edition</strong><br />
+          <sup>by Don Syme, Adam Granicz, Antonio Cisternino (Dec 2016)</sup>
+        </p>
+        <p>
+          Learn from F#'s inventor to become an expert in the latest version of this powerful
+          programming language so you can seamlessly integrate functional, imperative,
+          object-oriented, and query programming style flexibly and elegantly to solve any
+          programming problem. Expert F# 4.0 will help you achieve unrivaled levels of programmer
+          productivity and program clarity across multiple platforms including Windows, Linux,
+          Android, OSX, and iOS as well as HTML5 and GPUs.
+        </p>
+      </td>
+    </tr>
+  </table>
 
 
 ### Related Projects
