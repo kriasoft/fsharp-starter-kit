@@ -8,9 +8,9 @@
  */
 
 import React from 'react';
-import { Layout } from '../../components'
+import { Layout } from '../../components';
 
-const link = "https://github.com/kriasoft/fsharp-starter-kit";
+const link = 'https://github.com/kriasoft/fsharp-starter-kit';
 
 function Home() {
   return (

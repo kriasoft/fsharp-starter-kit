@@ -9,13 +9,11 @@
 
 import About from './About';
 
-const path = '/';
+const path = '/about';
 
-const action = () => {
-  return {
-    title: 'About Us',
-    component: About
-  };
-};
+const action = () => ({
+  title: 'About Us',
+  component: About,
+});
 
 export default { path, action };
