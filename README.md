@@ -93,9 +93,9 @@ $ npm run deploy                # Same as running: node tools/deploy --productio
 
 ### How to Update
 
-We work hard on keeping the project up to date and adding new features. After starting a new web
-application project based on this boilerplate, you can alwasy fetch and merge the latest changes
-from this (upstream) repo back into your project by running:
+We work hard on keeping the project up-to-date and adding new features. Down the road, after
+starting a new web application project based on this boilerplate, you can always fetch and merge
+the latest changes from this (upstream) repo back into your project by running:
 
 ```shell
 $ git checkout master
@@ -103,8 +103,18 @@ $ git fetch aspnet-starter-kit
 $ git merge aspnet-starter-kit/master 
 ```
 
-Alternatively, you can pull the updates into a separate folder and and compare that folder with your
-project by using a diff tool such as [Beyond Compare](http://www.scootersoftware.com/).
+Alternatively, pull the latest version of this repository into a separate folder and and compare
+it with your project by using a diff tool such as [Beyond Compare](http://www.scootersoftware.com/).
+
+
+### How to Contribute
+
+Anyone and everyone is welcome to [contribute](CONTRIBUTING.md) to this project. The best way to
+start is by checking our [open issues](https://github.com/kriasoft/aspnet-starter-kit/issues),
+[submit a new issues](https://github.com/kriasoft/fsharp-starter-kit/issues/new?labels=bug) or
+[feature request](https://github.com/kriasoft/fsharp-starter-kit/issues/new?labels=enhancement),
+participate in discussions, upvote or downvote the issues you like or dislike, send [pull
+requests](CONTRIBUTING.md#pull-requests).
 
 
 ### Learn More
@@ -112,10 +122,14 @@ project by using a diff tool such as [Beyond Compare](http://www.scootersoftware
 
 * **General**
   * [.NET Core Documentation](https://dotnet.github.io/docs/) (core concepts: CoreFX, CoreCLR, Roslyn, .NET CLI tools etc.)
-  * [ASP.NET Core Documentation](https://docs.asp.net/en/latest/) (MVC, Razor, Routing, SignalR, Identity, Localization, Caching etc.)
+  * [ASP.NET Core Documentation](https://docs.asp.net/en/latest/) (MVC, Razor, SignalR, Identity, routing, localization, caching etc.)
   * [Entity Framework Core Documenation](https://docs.efproject.net/en/latest/) (providers, models, migrations, EF CLI tools etc.)
-* **Security**
-  * [How to Set Up ASP.NET Core DataProtection in a Web Farm](http://www.paraesthesia.com/archive/2016/06/15/set-up-asp-net-dataprotection-in-a-farm/) by [Travis Illig](http://www.paraesthesia.com/)
+  * [Facebook React Documentation](https://facebook.github.io/react/) ([getting started](https://facebook.github.io/react/docs/getting-started.html),
+    [thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html), [top-level API](https://facebook.github.io/react/docs/top-level-api.html),
+    [component API](https://facebook.github.io/react/docs/component-api.html) etc.)
+* **Hosting**
+  * [Running ASP.NET Core applications with IIS and Antares (Azure Web Apps)](https://blog.3d-logic.com/2016/06/08/running-asp-net-core-applications-with-iis-and-antares/) by [Pawel Kadluczka](https://blog.3d-logic.com)
+  * [How to set up ASP.NET Core DataProtection in a Web Farm](http://www.paraesthesia.com/archive/2016/06/15/set-up-asp-net-dataprotection-in-a-farm/) by [Travis Illig](http://www.paraesthesia.com/)
 * **Books**
   <table width="100%">
     <tr>
