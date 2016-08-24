@@ -124,11 +124,11 @@ requests](CONTRIBUTING.md#pull-requests).
 
 :mortar_board: &nbsp; **[React.js Training Program](http://www.reactjsprogram.com/?asdf=36750_q0pu0tfa)** by Tyler McGinnis<br>
 :mortar_board: &nbsp; **[React for Beginners](https://reactforbeginners.com/friend/konstantin)** and **[ES6 Training Course](https://es6.io/friend/konstantin)** by Wes Bos<br>
-:green_book: &nbsp; **[React: Up & Running: Building Web Applications](http://amzn.to/2bzweBe)** by Stoyan Stefanov (Aug, 2016)<br>
-:green_book: &nbsp; **[Getting Started with React](http://amzn.to/2bDmSmG)** by Doel Sengupta and Manu Singhal (Apr, 2016)<br>
-:green_book: &nbsp; **[You Don't Know JS: ES6 & Beyond](http://amzn.to/2bKpb4I)** by Kyle Simpson (Dec, 2015)<br>
-:green_book: &nbsp; **[Beginning F# 4.0](http://amzn.to/1UufBR9), 2nd Edition** by Robert Pickering and Kit Eason (Jun, 2016)<br>
-:green_book: &nbsp; **[Expert F# 4.0](http://amzn.to/1U4dKp1), 4th Edition** by Don Syme, Adam Granicz, Antonio Cisternino (Dec, 2016)<br>
+:green_book: &nbsp; **[React: Up & Running: Building Web Applications](http://amzn.to/2bzwQ5g)** by Stoyan Stefanov (Aug, 2016)<br>
+:green_book: &nbsp; **[Getting Started with React](http://amzn.to/2bg1MKn)** by Doel Sengupta and Manu Singhal (Apr, 2016)<br>
+:green_book: &nbsp; **[You Don't Know JS: ES6 & Beyond](http://amzn.to/2bFzJVI)** by Kyle Simpson (Dec, 2015)<br>
+:green_book: &nbsp; **[Beginning F# 4.0](http://amzn.to/2bhIhCB), 2nd Edition** by Robert Pickering and Kit Eason (Jun, 2016)<br>
+:green_book: &nbsp; **[Expert F# 4.0](http://amzn.to/2bg2DdP), 4th Edition** by Don Syme, Adam Granicz, Antonio Cisternino (Dec, 2016)<br>
 
 
 ### Related Projects
